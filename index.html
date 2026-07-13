@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I AM - 개인 포트폴리오</title>
+        <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <a href="#home" class="nav-link" data-target="home">I <span>AM</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-target="skills">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link" data-target="portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SPA 메인 컨텐츠 영역 -->
+    <main class="container">
+        
+        <!-- 1. 메인 히어로 섹션 -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1 class="hero-title">
+                    Hello, <br/>
+                    <span class="gradient-text">I AM</span> 
+                    <span id="typed-text" class="typing-cursor"></span>
+                </h1>
+                <p class="hero-desc">
+                    사용자의 경험을 디자인하고, 코드로 세상을 만들어가는 웹 개발자입니다. <br/>
+                    끊임없이 배우고 성장하는 것을 즐깁니다.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary nav-link" data-target="portfolio">작업물 보기</button>
+                    <button onclick="alert('이메일 주소가 클립보드에 복사되었습니다! (구현 예시)')" class="btn btn-secondary">연락하기</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About 섹션 -->
+        <section id="about" class="section">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    🧑‍💻
+                </div>
+                <div class="about-text">
+                    <p>안녕하세요! <strong>기록하고 증명하는 개발자</strong> 황윤주입니다.</p>
+                    <p>복잡한 문제를 단순하고 우아한 코드로 풀어내는 것에 희열을 느낍니다. 단순히 기능만 작동하는 것을 넘어, 사용자가 진정으로 편리함을 느낄 수 있는 UI/UX를 고민하며 개발합니다.</p>
+                    
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <h3>Education</h3>
+                            <p>부산대학교 IT응용공학과 졸업 (2025)</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Experience</h3>
+                            <p>SSAFY 교육(2026.07.07~)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills 섹션 -->
+        <section id="skills" class="section">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-grid">
+                
+                <!-- 스킬 박스 1 -->
+                <div class="skill-box">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML/CSS/JS</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>React.js</span><span>50%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Vanilla CSS</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+
+                                <!-- 스킬 박스 2 -->
+                <div class="skill-box">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Node.js</span><span>50%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Spring</span><span>60%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                    </div>
+                </div>
+
+                <!-- 스킬 박스 3 -->
+                <div class="skill-box">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Git & GitHub</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress purple-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Figma (UI/UX)</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-progress purple-progress" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Notion</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-progress purple-progress" style="width: 95%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Portfolio 섹션 -->
+        <section id="portfolio" class="section">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="portfolio-grid">
+                <!-- 프로젝트 1 -->
+                <div class="project-card" onclick="openModal('project1')">
+                    <div class="project-img img-1">SMART PLANT APP</div>
+                    <div class="project-info">
+                        <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+                        <h3>스마트 화분 관리 시스템</h3>
+                          <p>3인 프로젝트로, 아두이노 센서 데이터를 수집하여 AI 분석을 통해 최적의 관리 환경을 제안하는 시스템입니다.</p>
+                        <span class="project-link">자세히 보기 &rarr;</span>
+                    </div>
+                </div>
+
+                <!-- 프로젝트 2 -->
+                <div class="project-card" onclick="openModal('project2')">
+                    <div class="project-img img-2">MOVIE</div>
+                    <div class="project-info">
+                        <div class="tags"><span class="tag">Spring</span><span class="tag">JPA</span></div>
+                        <h3>영화 리뷰 및 추천 시스템</h3>
+                        <p>Tmdb API와 ChatGPT를 활용하여 리뷰 분석 및 영화 추천을 수행하는 시스템입니다</p>
+                        <span class="project-link">자세히 보기 &rarr;</span>
+                    </div>
+                </div>
+
+              
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <h2>I <span>AM</span></h2>
+        <p>"어제보다 오늘 더 성장하는 개발자"</p>
+        <div class="social-links">
+            <a href="#" class="social-btn">GH</a>
+            <a href="#" class="social-btn">IN</a>
+            <a href="#" class="social-btn">IG</a>
+        </div>
+        <p style="font-size: 14px;">&copy; 2026 I AM Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- 모달 레이어 -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-body" class="modal-body">
+                <!-- JS로 동적 생성됨 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 기능 구현 JavaScript -->
+        <script src="index.js"></script>
+</html>
